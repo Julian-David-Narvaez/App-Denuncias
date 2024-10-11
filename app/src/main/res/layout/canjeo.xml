@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_administrador.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TextView para mostrar el nombre -->
+
+    <!-- TextView para mostrar la dirección -->
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:background="@drawable/redondo" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/iconTextView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/circle_background"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/veinticuatro" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textViewNombr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:text="Nombre y Apellido"
+                android:textSize="@dimen/dieciseis"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/textViewNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="serif"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:text="Nombre Apellido"
+                android:textSize="@dimen/dieciseis"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewNomb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="serif"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="Producto"
+                        android:textSize="@dimen/dieciseis"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:id="@+id/textViewIdItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="serif"
+                        android:paddingTop="5dp"
+                        android:text="Producto"
+                        android:textColor="#8FC530"
+                        android:textSize="@dimen/dieciseis"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/textViewNom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="serif"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="5dp"
+                    android:text="Ciudad"
+                    android:textSize="@dimen/dieciseis"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:id="@+id/textViewCiudad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="serif"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="5dp"
+                    android:text="Ciudad"
+                    android:textSize="@dimen/dieciseis"
+                    android:layout_marginBottom="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewNob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="serif"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="Dirección"
+                        android:textSize="@dimen/dieciseis"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:id="@+id/textViewDireccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:fontFamily="serif"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="Direccion"
+                        android:textSize="@dimen/dieciseis"
+                        android:layout_marginBottom="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="serif"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="Celular"
+                        android:textSize="@dimen/dieciseis"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:id="@+id/textViewNumeroC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:fontFamily="serif"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="Celular"
+                        android:textSize="@dimen/dieciseis"
+                        android:layout_marginBottom="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnentregado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#90CA27"
+                android:text="ENTREGADO"
+                android:textSize="@dimen/catorce"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

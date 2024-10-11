@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_crud2.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <!-- ListView para mostrar elementos -->
+    <!-- Agrega tu ListView aquí cuando lo incorpores -->
+
+    <!-- Formulario para agregar elementos -->
+    <!-- res/layout/item_layout.xml -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Imagen del producto -->
+        <Button
+            android:id="@+id/btnSeleccionarImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="Seleccionar Imagen"
+            android:textSize="@dimen/catorce"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" />
+
+        <!-- Nombre del producto -->
+        <TextView
+            android:id="@+id/textNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:textSize="@dimen/catorce"/>
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Nombre del producto"
+            android:textSize="@dimen/dieciocho"
+            android:backgroundTint="@color/colorPrimary"/>
+
+        <!-- Precio del producto -->
+        <TextView
+            android:id="@+id/textPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio:"
+            android:textSize="@dimen/catorce"/>
+        <EditText
+            android:id="@+id/editPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="numberDecimal"
+            android:hint="Precio"
+            android:textSize="@dimen/dieciocho"
+            android:backgroundTint="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/textViewCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ContenidoNoticia"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="1dp"
+            android:text="0/10"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Botones de acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#90CA27"
+                android:text="Guardar"
+                android:textSize="@dimen/catorce"/>
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#F43636"
+                android:text="Cancelar"
+                android:textSize="@dimen/catorce"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

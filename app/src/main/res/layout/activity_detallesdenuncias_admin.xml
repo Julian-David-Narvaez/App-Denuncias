@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/profileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#8BC34A"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="goBack"
+            android:contentDescription="regresar"
+            android:padding="10dp"
+            android:src="@drawable/icon_atras" />
+
+        <TextView
+            android:id="@+id/textInicio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Detalles"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/treinta" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="842dp"
+        android:layout_marginTop="70dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Asunto:"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/veinte"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detalleAsunto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:text="Asunto:"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textSize="@dimen/dieciseis" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Empresa:"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/veinte"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detalleEmpresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:text="Empresa:"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textSize="@dimen/dieciseis" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Descripcion:"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/veinte"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detalleDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:text="Descripción:"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textSize="@dimen/dieciseis" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Direccion:"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/veinte"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detalleDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:text="Dirección:"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textSize="@dimen/dieciseis" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Fecha:"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/veinte"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detalleFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:text="Fecha:"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textSize="@dimen/dieciseis" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Estado:"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/veinte"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detalleEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:text="Estado:"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textSize="@dimen/dieciseis"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/detalleImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="400dp"
+                android:maxHeight="300dp"
+                android:paddingBottom="15dp"
+                android:scaleType="centerInside" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+

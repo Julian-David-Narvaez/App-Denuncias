@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrarse">
+
+    <!-- Titulo-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="177dp"
+        android:layout_height="51dp"
+        android:fontFamily="serif"
+        android:text="Registrate"
+        android:textAlignment="center"
+        android:textSize="@dimen/treintaycuatro"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <!-- Nombre Completo -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_nombreCompletoRegistrarse"
+        android:layout_width="350dp"
+        android:layout_height="68dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154"
+        app:startIconDrawable="@drawable/icon_persona">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_nombreCompletoRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:fontFamily="serif"
+            android:hint="Nombre Completo"
+            android:textSize="@dimen/dieciseis"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Correo Electronico -->
+
+    <!-- N.Documento -->
+
+    <!-- Seleccion identidad -->
+
+    <!-- N.Celular -->
+
+    <!-- Contraseña -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_correoRegistrarse"
+        android:layout_width="350dp"
+        android:layout_height="68dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266"
+        app:startIconDrawable="@drawable/icon_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_correoRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:fontFamily="serif"
+            android:hint="Correo Electrónico"
+            android:maxWidth="350dp"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/dieciseis"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="95dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386"
+        android:layout_margin="15dp">
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/spinner_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.096"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.388"
+            android:textSize="@dimen/dieciseis"
+            android:scrollbarSize="@dimen/dieciseis">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="@dimen/dieciseis"
+                android:scrollbarSize="@dimen/dieciseis"/>
+        </FrameLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_documentoRegistrarse"
+            android:layout_width="230dp"
+            android:layout_height="95dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.394"
+            app:startIconDrawable="@drawable/icon_documento" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_documentoRegistrarse"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:fontFamily="serif"
+                android:hint="Numero de documento"
+                android:textSize="@dimen/dieciseis"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Registrar"
+        android:layout_width="328dp"
+        android:layout_height="55dp"
+        android:fontFamily="serif"
+        android:text="Registrar"
+        android:textSize="@dimen/veinticuatro"
+        app:backgroundTint="#8FC530"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="250dp"
+        android:layout_height="37dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:text="Ya tiene una cuenta?"
+            android:textSize="@dimen/catorce" />
+
+        <Button
+            android:id="@+id/btn_VolverIniciarSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="#00FFFFFF"
+            android:fontFamily="serif"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:text="Iniciar Sesión"
+            android:textColor="#8EC430"
+            android:textSize="@dimen/catorce"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_NumeroCelularRegistrar"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535"
+        app:prefixText="+57"
+        app:startIconDrawable="@drawable/icon_celular">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_NumeroCelularRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:hint="Número Celular"
+            android:inputType="phone"
+            android:textSize="@dimen/dieciseis" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_contraseñaRegistrar"
+        android:layout_width="350dp"
+        android:layout_height="68dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.659"
+        app:startIconDrawable="@drawable/icon_candado">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_contraseñaRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:fontFamily="serif"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textSize="@dimen/dieciseis" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox_politicas"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Politicas de Privacidad"
+        android:textSize="@dimen/catorce"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

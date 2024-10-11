@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Correo electrónico del destinatario"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="@dimen/dieciocho"/>
+
+    <EditText
+        android:id="@+id/editTextCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Cantidad de monedas a transferir"
+        android:inputType="number"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="@dimen/dieciocho"/>
+
+</LinearLayout>

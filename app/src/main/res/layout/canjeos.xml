@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_administrador.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/profileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="2dp"
+        android:background="#8BC34A"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/regresar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:contentDescription="regresar"
+            android:padding="10dp"
+            android:src="@drawable/icon_atras" />
+
+        <TextView
+            android:id="@+id/textInicio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Canjeos"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/treinta" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewCanjeos"
+        android:layout_width="match_parent"
+        android:layout_height="732dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:divider="@null"
+        android:elevation="1dp"
+        android:paddingTop="35dp"
+        android:paddingBottom="5dp"/>
+
+</RelativeLayout>

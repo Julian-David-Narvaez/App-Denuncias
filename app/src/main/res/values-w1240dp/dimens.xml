@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="doce">12dp</dimen>
+    <dimen name="catorce">14dp</dimen>
+    <dimen name="dieciseis">16dp</dimen>
+    <dimen name="dieciocho">18dp</dimen>
+    <dimen name="veinte">20dp</dimen>
+    <dimen name="veinticuatro">24dp</dimen>
+    <dimen name="treinta">30dp</dimen>
+    <dimen name="treintaycuatro">34dp</dimen>
+    <dimen name="cuarentayocho">48dp</dimen>
+    <dimen name="sesentaycuatro">64dp</dimen>
+</resources>

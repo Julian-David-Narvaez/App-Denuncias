@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/dialog_canjear.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editNombreCanje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre y Apellido"
+        android:textSize="@dimen/dieciocho"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/editCiudadCanje"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/editNombreCanje"
+        android:layout_marginTop="8dp"
+        android:hint="Ciudad"
+        android:textSize="@dimen/dieciocho"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/editDireccionCanje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editCiudadCanje"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:hint="Dirección"
+        android:textSize="@dimen/dieciocho" />
+
+    <EditText
+        android:id="@+id/editNumeroC"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/editDireccionCanje"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:hint="Numero Celular"
+        android:textSize="@dimen/dieciocho"
+        android:maxLength="10"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/btnGuardarCanje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNumeroC"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#90CA27"
+        android:text="Guardar"
+        android:textSize="@dimen/catorce"/>
+
+    <Button
+        android:id="@+id/btnCancelarCanje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNumeroC"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/btnGuardarCanje"
+        android:backgroundTint="#EF0000"
+        android:text="Cancelar"
+        android:textSize="@dimen/catorce"/>
+
+</RelativeLayout>

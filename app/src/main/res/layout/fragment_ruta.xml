@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".menus.Ruta">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <!-- Título del acordeón -->
+        <ImageButton
+            android:id="@+id/btnBioterra"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:backgroundTint="#FFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/letras_bioterra"
+            android:contentDescription="imagen" />
+
+        <!-- Contenido del acordeón (inicialmente oculto) -->
+        <LinearLayout
+            android:id="@+id/containerGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/containerLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#8FC530"
+                    android:fontFamily="serif"
+                    android:padding="16dp"
+                    android:text="Lunes:"
+                    android:textSize="@dimen/dieciseis"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/hora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:background="#8FC530"
+                    android:text="8:00 am - 12:00 pm"
+                    android:textSize="@dimen/dieciseis"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dia2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:background="#8FC530"
+                    android:text="Martes:"
+                    android:textSize="@dimen/dieciseis"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/hora2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:background="#8FC530"
+                    android:text="8:00 am - 12:00 pm"
+                    android:textSize="@dimen/dieciseis"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dia3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:background="#8FC530"
+                    android:text="Miercoles:"
+                    android:textSize="@dimen/dieciseis"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/hora3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:background="#8FC530"
+                    android:text="8:00 am - 12:00 pm"
+                    android:textSize="@dimen/dieciseis"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dia4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:background="#8FC530"
+                    android:text="Jueves:"
+                    android:textSize="@dimen/dieciseis"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/hora4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:background="#8FC530"
+                    android:text="8:00 am - 12:00 pm"
+                    android:textSize="@dimen/dieciseis"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dia5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:background="#8FC530"
+                    android:text="Viernes:"
+                    android:textSize="@dimen/dieciseis"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/hora5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:background="#8FC530"
+                    android:text="8:00 am - 12:00 pm"
+                    android:textSize="@dimen/dieciseis"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dia6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:background="#8FC530"
+                    android:text="Sabado:"
+                    android:textSize="@dimen/dieciseis"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/hora6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:background="#8FC530"
+                    android:text="8:00 am - 12:00 pm"
+                    android:textSize="@dimen/dieciseis"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dia7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:background="#8FC530"
+                    android:text="Domingo:"
+                    android:textSize="@dimen/dieciseis"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/hora7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:background="#8FC530"
+                    android:text="8:00 am - 12:00 pm"
+                    android:textSize="@dimen/dieciseis"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

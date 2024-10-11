@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:id="@+id/containerAsunto"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#8BC34A"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|end"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:tag="ID_DEL_FORMULARIO">
+
+        <!-- Icono de estrella a la izquierda -->
+        <ImageView
+            android:id="@+id/iconoEstrella"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_star"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Texto en el centro -->
+        <TextView
+            android:id="@+id/textViewAsunto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:text="Asunto Reporte"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/veinte"
+            android:textStyle="bold" />
+
+        <!-- Icono de flecha a la derecha -->
+        <ImageView
+            android:id="@+id/iconoFlecha"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_flecha"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

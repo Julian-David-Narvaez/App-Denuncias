@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilCuenta">
+
+    <LinearLayout
+        android:id="@+id/profileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#8BC34A"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iconAtras"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_atras"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="regresar"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/textInicio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Perfil"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/treinta"
+            android:layout_marginRight="60dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/anonimo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:divider="?android:attr/dividerVertical"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/dividerVertical" />
+
+        <TextView
+            android:id="@+id/textNombreCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/icon_edit"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:text="Nombre de la cuenta"
+            android:textSize="@dimen/dieciocho" />
+
+        <TextView
+            android:id="@+id/textCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Correo electrónico"
+            android:textSize="@dimen/dieciocho" />
+
+        <TextView
+            android:id="@+id/textTipoCedulaNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Tipo de cédula y número"
+            android:textSize="@dimen/dieciocho" />
+
+        <TextView
+            android:id="@+id/textNumeroCelular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/icon_edit"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:text="Número de celular"
+            android:textSize="@dimen/dieciocho" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/dividerVertical" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Desarrollado Por: Programmer JCM"
+        android:textSize="@dimen/catorce"
+        android:textColor="#59000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.918" />
+</androidx.constraintlayout.widget.ConstraintLayout>

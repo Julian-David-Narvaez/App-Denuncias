@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OlvidoContrasena">
+
+    <!--Imagen-->
+
+    <ImageView
+        android:id="@+id/ImgBioterra"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        app:srcCompat="@drawable/bioterra" />
+
+    <TextView
+        android:id="@+id/txt_recuperarContraseña"
+        android:layout_width="284dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Recuperar Contraseña"
+        android:textAlignment="center"
+        android:textSize="@dimen/veinticuatro"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/input_correoRecuperar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgBioterra"
+        app:layout_constraintVertical_bias="0.489" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_correoRecuperar"
+        android:layout_width="350dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="144dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgBioterra"
+        app:startIconDrawable="@drawable/icon_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_correoRecuperar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Correo Electrónico"
+            android:textSize="@dimen/dieciseis"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_Atras"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:background="#00E11515"
+        android:fontFamily="serif"
+        android:text="Volver"
+        android:textAlignment="center"
+        android:textColor="#959191"
+        android:textSize="@dimen/dieciseis"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_RecuperarContraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_correoRecuperar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_RecuperarContraseña"
+        android:layout_width="328dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#8FC530"
+        android:fontFamily="serif"
+        android:onClick="enviarMensaje"
+        android:text="Enviar"
+        android:textAlignment="center"
+        android:textSize="@dimen/dieciocho"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgBioterra"
+        app:layout_constraintVertical_bias="0.7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

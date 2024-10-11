@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <!-- ListView para mostrar elementos -->
+
+    <!-- Otros atributos y configuraciones -->
+
+
+
+    <!-- Formulario para agregar elementos -->
+    <!-- res/layout/item_layout.xml -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- Imagen del producto -->
+        <Button
+            android:id="@+id/btnSeleccionarImagenNoticia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="Seleccionar Imagen" />
+
+        <ImageView
+            android:id="@+id/imageViewNoticia"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" />
+
+        <!-- titulo de la noticia -->
+
+        <EditText
+            android:id="@+id/editTituloNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Titulo de la noticia"/>
+        <TextView
+            android:id="@+id/textViewCounterr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTituloNoticia"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="1dp"
+            android:text="0/30"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Contenido de la noticia -->
+
+        <EditText
+            android:id="@+id/editContenidoNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Contenido de la noticia"
+            android:scrollbars="vertical"
+            android:maxLines="1"
+            android:inputType="textMultiLine"
+            android:gravity="top|start"/>
+        <TextView
+            android:id="@+id/textViewCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ContenidoNoticia"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="1dp"
+            android:text="0/250"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Botones de acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGuardarNoticia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#90CA27"
+                android:text="Guardar" />
+
+            <Button
+                android:id="@+id/btnCancelarNoticia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#F43636"
+                android:text="Cancelar" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
